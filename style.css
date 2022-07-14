@@ -1,0 +1,438 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+body{
+    background: #f8f8ff;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 20px;
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.wrapper h2{
+    position: fixed;
+    left: 10rem;
+    top: 2rem;
+}
+
+.input label {
+    position: absolute;
+    left: 8rem;
+    top: 6rem;
+    font-size: 0.1rem;
+    background-color: #5474fc;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow:0 2px 15px 0 rgba(0,0,0,.05)
+}
+
+.input1 label {
+    position: absolute;
+    left: 8rem;
+    top: 15rem;
+    font-size: 0.1rem;
+    background-color: #5474fc;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow:0 2px 15px 0 rgba(0,0,0,.05)
+}
+
+.text{
+    position: fixed;
+    left: 7rem;
+    top: 6.5rem;
+    width: 25rem;
+    height: 3rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    outline: none;
+    border-width: .2px;
+}
+
+.encodeResult{
+    position: fixed;
+    left: 7rem;
+    top: 10.5rem;
+    border: 1px solid;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    border-radius: 25px;
+    width: 25rem;
+    height: 3rem;
+}
+
+.text1{
+    position: fixed;
+    left: 7rem;
+    top: 15.5rem;
+    width: 25rem;
+    height: 3rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
+    outline: none;
+    border-width: .2px;
+}
+
+.DecodeResult{
+    position: fixed;
+    left: 7rem;
+    top: 19.5rem;
+    border: 1px solid;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    border-radius: 25px;
+    width: 25rem;
+    height: 3rem;
+}
+
+.encode{
+    position: fixed;
+    left: 10rem;
+    top: 24rem;
+    width: 7rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 20px;
+    background: #5474fc;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.encode:hover{
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+.decode{
+    position: fixed;
+    left: 20rem;
+    top: 24rem;
+    width: 7rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 20px;
+    background: #5474fc;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.decode:hover{
+    box-shadow:0 5px 30px 0 rgba(0,0,0,.05)
+}
+
+@media (max-width: 690px) {
+    .wrapper{
+        background: #ffffff;
+        width: 35rem;
+    }
+    .wrapper h2{
+        left: 7rem;
+    }
+    .text {
+        left: 5em;
+    }
+    .text1 {
+        left: 5em;
+    }
+    .encodeResult{
+        left: 4em;
+    }
+    .DecodeResult{
+        left: 4em;
+    }
+    .input label {
+        left: 5.5rem;
+    }
+    .input1 label {
+        left: 5.5rem;
+    }
+    .encode{
+        left: 8rem;
+    }
+    .decode{
+        left: 18rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper{
+        background: #ffffff;
+        width: 32rem;
+    }
+    .wrapper h2{
+        left: 5rem;
+    }
+    .text {
+        left: 4em;
+    }
+    .text1 {
+        left: 4em;
+    }
+    .encodeResult{
+        left: 3.2em;
+    }
+    .DecodeResult{
+        left: 3.2em;
+    }
+    .input label {
+        left: 4.5rem;
+    }
+    .input1 label {
+        left: 4.5rem;
+    }
+    .encode{
+        left: 7rem;
+    }
+    .decode{
+        left: 17rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .wrapper{
+        background: #ffffff;
+        width: 28rem;
+    }
+    .wrapper h2{
+        left: 4rem;
+    }
+    .text {
+        left: 5em;
+        width: 20rem;
+    }
+    .text1 {
+        left: 5em;
+        width: 20rem;
+    }
+    .encodeResult{
+        left: 4em;
+        width: 20rem;
+    }
+    .DecodeResult{
+        left: 4em;
+        width: 20rem;
+    }
+    .input label {
+        left: 5rem;
+    }
+    .input1 label {
+        left: 5rem;
+    }
+    .encode{
+        left: 5rem;
+    }
+    .decode{
+        left: 15rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .wrapper{
+        background: #ffffff;
+        width: 25rem;
+    }
+    .wrapper h2{
+        left: 3rem;
+        font-size: 1.3rem;
+    }
+    .text {
+        left: 3em;
+        width: 20rem;
+    }
+    .text1 {
+        left: 3em;
+        width: 20rem;
+    }
+    .encodeResult{
+        left: 2.3em;
+        width: 20rem;
+    }
+    .DecodeResult{
+        left: 2.3em;
+        width: 20rem;
+    }
+    .input label {
+        left: 3.8rem;
+    }
+    .input1 label {
+        left: 3.8rem;
+    }
+    .encode{
+        left: 3.5rem;
+    }
+    .decode{
+        left: 13rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .wrapper{
+        background: #ffffff;
+        width: 22rem;
+    }
+    .wrapper h2{
+        left: 2.2rem;
+        font-size: 1.3rem;
+    }
+    .text {
+        left: 2.5em;
+        width: 18rem;
+    }
+    .text1 {
+        left: 2.5em;
+        width: 18rem;
+    }
+    .encodeResult{
+        left: 2em;
+        width: 18rem;
+    }
+    .DecodeResult{
+        left: 2em;
+        width: 18rem;
+    }
+    .input label {
+        left: 3.2rem;
+    }
+    .input1 label {
+        left: 3.2rem;
+    }
+    .encode{
+        left: 3rem;
+    }
+    .decode{
+        left: 12rem;
+    }
+}
+
+@media (max-width: 370px) {
+    .wrapper{
+        background: #ffffff;
+        width: 20rem;
+        height: 28rem;
+    }
+    .wrapper h2{
+        left: 1.8rem;
+        font-size: 1.2rem;
+    }
+    .text {
+        left: 2.5em;
+        width: 15.5rem;
+    }
+    .text1 {
+        left: 2.5em;
+        width: 15.5rem;
+    }
+    .encodeResult{
+        left: 2em;
+        width: 15.5rem;
+    }
+    .DecodeResult{
+        left: 2em;
+        width: 15.5rem;
+    }
+    .input label {
+        left: 3.2rem;
+    }
+    .input1 label {
+        left: 3.2rem;
+    }
+    .encode{
+        left: 3rem;
+        width: 5.8rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+    .decode{
+        left: 10rem;
+        width: 5.8rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 340px) {
+    .wrapper{
+        background: #ffffff;
+        width: 16rem;
+        height: 25rem;
+    }
+    .wrapper h2{
+        left: 1.3rem;
+        font-size: 1rem;
+    }
+    .text {
+        top: 5rem;
+        left: 2.5em;
+        width: 12rem;
+    }
+    .text1 {
+        top: 13rem;
+        left: 2.5em;
+        width: 12rem;
+    }
+    .encodeResult{
+        top: 9rem;
+        left: 2em;
+        width: 12rem;
+    }
+    .DecodeResult{
+        top: 17rem;
+        left: 2em;
+        width: 12rem;
+    }
+    .input label {
+        top: 4.5rem;
+        left: 3.2rem;
+    }
+    .input1 label {
+        top: 12.5rem;
+        left: 3.2rem;
+    }
+    .encode{
+        top: 21rem;
+        left: 2.5rem;
+        width: 5.2rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+    .decode{
+        top: 21rem;
+        left: 8rem;
+        width: 5.2rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
+    }
+}
